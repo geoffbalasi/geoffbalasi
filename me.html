@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">  
+  <title>Geoff Balasi</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+  <script>
+	function myFunction() {
+		var age, oneDay, birth, today, year, subYear, decimal;
+		oneDay = 24*60*60*1000;
+		birth = new Date(1990,01,15);
+		today = new Date();
+		age = (Math.abs((birth.getTime() - today.getTime())/(oneDay)))/365;
+	    document.getElementById("year").innerHTML = Math.floor(age);
+	    decimal = age - Math.floor(age);
+	    decimal = decimal.toString();
+	    decimal = decimal.replace(/^0+/, '');
+	    decimal = decimal.substring(0,11);
+	    document.getElementById("subYear").innerHTML = decimal;
+	}
+	window.setInterval(myFunction, 1);
+  </script>
+</head>
+<body>
+	<div id="header">
+		<div id="navigation">
+			<span>me</span>
+			<span>portfolio</span>
+		</div>
+	</div>
+	<img class="avatar" src="assets/images/Selfie.jpg">
+	<div id="bio">
+		<h2>Hey there</h2>
+		<h3>come on in</h3>
+		<div id="dots">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<h5>Product designer & developer currently based in Chicago, Il</h5>
+		<div id="dots">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+		<h1 id="year"></h1>
+		<h3 id="subYear"></h3>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,53 @@
+/* colors */
+/* greyscale */
+/* site colors */
+body {
+  color: #222;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  letter-spacing: .5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+::selection {
+  background: rgba(255, 77, 77, 0.2); }
+
+::-moz-selection {
+  background: rgba(255, 77, 77, 0.2); }
+
+h1,
+h2,
+h3,
+h4 {
+  display: block;
+  font-weight: 700;
+  margin: 0 0 .9em; }
+
+h1 {
+  font-size: 2.2em; }
+
+h2 {
+  font-size: 1.8em; }
+
+h3 {
+  font-size: 1.5em;
+  cursor: default; }
+
+h4 {
+  font-size: 1.2em; }
+
+p {
+  font-size: 1em;
+  line-height: 1.4em; }
+  p.subtle {
+    font-size: .95em;
+    line-height: 1.1em;
+    color: #888; }
+
+a {
+  color: #ff4d4d;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+/*# sourceMappingURL=font.css.map */
