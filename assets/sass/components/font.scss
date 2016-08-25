@@ -25,8 +25,8 @@ h2,
 h3,
 h4{
 	display: block;
-	font-weight: $bold;
-	margin: 0 0 .9em;
+	font-weight: $regular;
+	margin: 0 0 .4em;
 }
 
 
@@ -45,11 +45,12 @@ h3 {
 
 h4 {
 	font-size: 1.2em;
+	font-weight: $light;
 }
 
 p {
-	font-size: 1em;
-	line-height: 1.4em;
+	font-size: 1.15em;
+	line-height: 1.75em;
 	&.subtle {
 		font-size: .95em;
 		line-height: 1.1em;
