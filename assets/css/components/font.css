@@ -10,10 +10,10 @@ body {
   -moz-osx-font-smoothing: grayscale; }
 
 ::selection {
-  background: rgba(56, 91, 231, 0.2); }
+  background: rgba(25, 186, 127, 0.2); }
 
 ::-moz-selection {
-  background: rgba(56, 91, 231, 0.2); }
+  background: rgba(25, 186, 127, 0.2); }
 
 h1,
 h2,
@@ -46,7 +46,7 @@ p {
     color: #888; }
 
 a {
-  color: #385BE7;
+  color: #19BA7F;
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
