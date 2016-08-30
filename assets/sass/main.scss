@@ -23,7 +23,15 @@ a {
 	}
 }
 
-ul {
+ul.list {
+	list-style-type: circle;
+	
+	li {
+
+	}
+}
+
+ul.nav {
     list-style: none;
     padding: 0;
     text-align: center;
@@ -35,6 +43,8 @@ ul {
 		    border-bottom: 3px solid $primary-color;
 		    margin: 1em;
 		    padding-bottom: 3px;
+		    transition: border-color .4s ease-out;
+		    -webkit-transition: border-color .4s ease-out;
 		    &:hover {
 		    	border-color: white;
 		    }
@@ -92,7 +102,7 @@ hr {
 	a {
 		color: $white;
 	}
-	ul {
+	ul.nav {
 		margin: 25px 0 5px;
 	}
 }
@@ -103,12 +113,9 @@ hr {
 	margin: 40px auto;
 	max-width: 800px;
 	padding: 20px;
+	position: relative;
 	width: 85%;
-	h2:first-child {
-		color: $silver-chalice;
-		font-weight: $light;
-	}
-	ul {
+	ul.nav {
 		a {
 		    color: $primary-color;
 		    border-bottom: 3px solid $white;
@@ -126,29 +133,41 @@ hr {
 		height: 50px;
     	margin: 0 15px;
 	}
-	li {
-		border-bottom: 4px solid $white;
-		margin: 5px;
-		padding: 5px;
-		transition: border-color .3s ease-out;
-	    -webkit-transition: border-color .3s ease-out;
-		a {
-			border-color: $white;
-			color: $mine-shaft;
-			margin: 0.3em;
-			&:hover {
-				border-color: $primary-color;
-				color: $primary-color;
-				cursor: pointer;
+	ul.nav {
+		text-align: left;
+		li {
+			margin: 5px;
+			padding: 5px;
+			a {
+				border-color: $white;
+				color: $mine-shaft;
+				margin: 0.3em;
+				&:hover {
+					border-color: $primary-color;
+					color: $primary-color;
+					cursor: pointer;
+				}
 			}
 		}
 	}
-	ul {
-		text-align: left;
-	}
 }
 
-/* homepage */
+/* Homepage */
+
+.avatar {
+	margin: auto;
+    width: 300px;
+    display: block;
+}
+
+.about {	
+	&.container {
+		h1,
+		h2 {
+			color: $primary-color;
+		}
+	}
+}
 
 /* Notes */
 
@@ -230,6 +249,9 @@ hr {
 .article {
 	&.container {
 		border: none;
+		hr {
+			margin: 3em;
+		}
 		h2 {
        		margin-top: 1em;
        		color: $primary-color;
@@ -241,6 +263,13 @@ hr {
 }
 
 /* Style Guide */
+
+.style.container {
+	h2:first-child {
+		color: $silver-chalice;
+		font-weight: $light;
+	}
+}
 
 .color-container {
 		div {
